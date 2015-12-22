@@ -1,1 +1,1 @@
-# Comparing two ways of involution
+Comparing two ways of involution
