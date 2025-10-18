@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 const int C_VALUE = 2;
-const int C_DEGREE = 2020;
+const int C_DEGREE = 1023;
 
 void count_time(power_func great_power) {
     clock_t begin = clock();

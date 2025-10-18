@@ -10,8 +10,8 @@ parameters:
 steps:
   build: |
     # Update and install dependencies
-    sudo apt-get update
-    sudo apt-get install -y build-essential
+    apt-get update
+    apt-get install -y build-essential
 
     # Compile the benchmark
     gcc -O2 -g pow/main.c pow/pow_*.c -o pow/main.out
