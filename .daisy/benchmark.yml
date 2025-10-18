@@ -14,9 +14,9 @@ steps:
     sudo apt-get install -y build-essential
 
     # Compile the benchmark
-    gcc -O2 -g pow/main.c -o pow/main.out
+    gcc -O2 -g pow/main.c pow/pow_*.c -o pow/main.out
 
   run:
-    matmul:
+    power:
       command: ./pow/main.out
       measurements: 1
