@@ -4,6 +4,7 @@ on:
       - master
 
 parameters:
+  timeout: 15
   partitions:
     - bellis4
 
@@ -20,3 +21,7 @@ steps:
     power:
       command: ./pow/main.out
       measurements: 1
+      profiler: perf
+      metrics:
+        - flops_dp
+        - memory_bandwidth
