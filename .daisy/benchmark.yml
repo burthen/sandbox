@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - check_daisy
+
+parameters:
+  partitions:
+    - bellis4
+
+steps:
+  build: |
+    # Update and install dependencies
+    sudo apt-get update
+    sudo apt-get install -y build-essential
+
+    # Compile the benchmark
+    gcc -O2 -g pow/main.c -o pow/main.out
+
+  run:
+    matmul:
+      command: ./pow/main.out
+      measurements: 1

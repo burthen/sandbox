@@ -26,7 +26,7 @@ int main() {
     {
         printf("%s\n", char_array[idx]);
         count_time(func_array[idx]);
-        //check
+        // check
     }
 
     return 0;
